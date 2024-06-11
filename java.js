@@ -7,28 +7,28 @@ const Confirm = document.getElementById('Confirmar')
 Confirm.addEventListener('click', function(){
 
 let Modelo = document.getElementById('Car').value
-let ID = document.getElementById('CarNum').value
+let Placa = document.getElementById('CarNum').value
 let Estacionamento = document.getElementById('Resultado')
 
 
 
-const People = {
+const Veiculo = {
 
-    Nome : Modelo,
-    Numero : ID
+    Carro : Modelo,
+    Numero : Placa
 
   }
 
 
-if(Modelo && ID ){
+if(Modelo && Placa ){
 
-Arr.push(People)
+Arr.push(Veiculo)
 
 
 Adicionar = ""
 for(let i = 0; i < Arr.length; i++ ){
 
-    Adicionar += (i + 1) + "- " + "Associado: " + Arr[i].Nome +  " de Numero : " + Arr[i].Numero + "\n" 
+    Adicionar += (i + 1) + "- " + "Associado: " + Arr[i].Carro +  " de Numero : " + Arr[i].Numero + "\n" 
 
 }
 console.log(Adicionar)
@@ -53,10 +53,10 @@ const Remove = document.getElementById('Remove')
 Remove.addEventListener('click', function(){
 
 let Estacionamento = document.getElementById('Resultado')
- const PessoaFisica = document.getElementById('Carro').value
+ const Veicular = document.getElementById('Carro').value
  let juncao = document.getElementById('Iterar')
 
-let Search = Arr.findIndex(Busca => Busca.Carro === PessoaFisica || Busca.Numero === PessoaFisica )
+let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero === Veicular )
 
 
     if(Search !== -1){
@@ -71,7 +71,7 @@ let Search = Arr.findIndex(Busca => Busca.Carro === PessoaFisica || Busca.Numero
 
     for(let i = 0; i < Arr.length; i++){
  
-        Adicionar += (i + 1) +("- ") + "Associado : " + Arr[i].Nome + " de Numero : " + Arr[i].Numero + "\n"
+        Adicionar += (i + 1) +("- ") + "Associado : " + Arr[i].Carro + " de Numero : " + Arr[i].Numero + "\n"
  
     }
     Estacionamento.innerText = Adicionar
@@ -86,7 +86,7 @@ let Search = Arr.findIndex(Busca => Busca.Carro === PessoaFisica || Busca.Numero
   }else{
 
     alert("ASSOCIADO NÃO ENCONTRADO ! ")
-    console.warn('VEICULONAOENCONTRADO #20702001');
+    console.warn('ASSOCIADONAOENCONTRADO #20702001');
     document.getElementById('Carro').value = ""
     console.log(Arr)
     Estacionamento.innerText = Adicionar
