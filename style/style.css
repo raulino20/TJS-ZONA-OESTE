@@ -18,7 +18,7 @@
 @media (max-width: 768px) {
   .Local {
     display: flex;
-    gap:0.5;
+    gap:0.5rem;
     flex-direction: column;
   }
 }
@@ -36,7 +36,6 @@
 
 .BTN {
   width:50%;
-  color:white;
   background-color: rgb(9, 86, 241);
   margin-left: 0.5rem;
 }
