@@ -38,7 +38,7 @@
   width:50%;
   border: 1px solid black;
   background-image:linear-gradient(90deg, black, white);
-  margin: auto auto auto auto;
+  margin: 0 auto;
 }
 
 .header {
