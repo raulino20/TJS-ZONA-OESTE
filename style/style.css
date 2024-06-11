@@ -37,7 +37,7 @@
 .BTN {
   width:50%;
   background-color: rgb(9, 86, 241);
-  margin-left: 0.5rem;
+  margin-left: 0 auto;
 }
 
 .header {
