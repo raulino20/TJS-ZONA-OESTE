@@ -28,7 +28,7 @@ Arr.push(Veiculo)
 Adicionar = ""
 for(let i = 0; i < Arr.length; i++ ){
 
-    Adicionar += (i + 1) + "- " + "Associado: " + Arr[i].Carro +  " de Numero : " + Arr[i].Numero + "\n" 
+      Adicionar += (i + 1) + "- " + "Associado: " + Arr[i].Carro +  " de  N° : " + Arr[i].Numero  + "\n" 
 
 }
 console.log(Adicionar)
@@ -71,7 +71,7 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
 
     for(let i = 0; i < Arr.length; i++){
  
-        Adicionar += (i + 1) +("- ") + "Associado : " + Arr[i].Carro + " de Numero : " + Arr[i].Numero + "\n"
+        Adicionar += (i + 1) +("- ") + "Associado : " + Arr[i].Carro + " de N° : " + Arr[i].Numero + "\n"
  
     }
     Estacionamento.innerText = Adicionar
