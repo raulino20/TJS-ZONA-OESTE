@@ -20,6 +20,7 @@
 @media(max-width:768px){
     .Local{
         display: flex;
+        gap:0.5rem;
         flex-direction: column;
     }
 }
@@ -38,8 +39,8 @@
 }
 
 .BTN{
-
-    margin-left: 0.5rem;
+    width: 50%;
+    margin:0 auto;
 }
 
 .header{
