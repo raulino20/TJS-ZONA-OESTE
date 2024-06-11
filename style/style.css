@@ -37,7 +37,7 @@
 .BTN {
   width:50%;
   background-image:linear-gradient(90deg, black, white);
-  margin-left: 0 auto;
+  margin: 0 auto;
 }
 
 .header {
