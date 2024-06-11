@@ -87,7 +87,7 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
 
     alert("VEOCULO NÃO ENCONTRADO ! ")
     console.warn('VEICULONAOENCONTRADO #20702001');
-
+    document.getElementById('Carro').value = ""
   }
 })
 
