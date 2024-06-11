@@ -7,28 +7,28 @@ const Confirm = document.getElementById('Confirmar')
 Confirm.addEventListener('click', function(){
 
 let Modelo = document.getElementById('Car').value
-let Placa = document.getElementById('CarNum').value
+let ID = document.getElementById('CarNum').value
 let Estacionamento = document.getElementById('Resultado')
 
 
 
-const Veiculo = {
+const People = {
 
-    Carro : Modelo,
-    Numero : Placa
+    Nome : Modelo,
+    Numero : ID
 
   }
 
 
-if(Modelo && Placa ){
+if(Modelo && ID ){
 
-Arr.push(Veiculo)
+Arr.push(People)
 
 
 Adicionar = ""
 for(let i = 0; i < Arr.length; i++ ){
 
-    Adicionar += (i + 1) + "- " + "Associado: " + Arr[i].Carro +  " de Numero : " + Arr[i].Numero + "\n" 
+    Adicionar += (i + 1) + "- " + "Associado: " + Arr[i].Nome +  " de Numero : " + Arr[i].Numero + "\n" 
 
 }
 console.log(Adicionar)
@@ -53,15 +53,15 @@ const Remove = document.getElementById('Remove')
 Remove.addEventListener('click', function(){
 
 let Estacionamento = document.getElementById('Resultado')
- const Veicular = document.getElementById('Carro').value
+ const PessoaFisica = document.getElementById('Carro').value
  let juncao = document.getElementById('Iterar')
 
-let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero === Veicular )
+let Search = Arr.findIndex(Busca => Busca.Carro === PessoaFisica || Busca.Numero === PessoaFisica )
 
 
     if(Search !== -1){
 
-        const Confirmacao = confirm('Deseja mesmo remover o veiculo ? ')
+        const Confirmacao = confirm('Deseja mesmo remover o Associado ? ')
 
     if(Confirmacao === true){
 
@@ -71,7 +71,7 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
 
     for(let i = 0; i < Arr.length; i++){
  
-        Adicionar += (i + 1) +("- ") + "Associado : " + Arr[i].Carro + " de Numero : " + Arr[i].Numero + "\n"
+        Adicionar += (i + 1) +("- ") + "Associado : " + Arr[i].Nome + " de Numero : " + Arr[i].Numero + "\n"
  
     }
     Estacionamento.innerText = Adicionar
@@ -80,12 +80,12 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
     console.log(Arr)
    }else{
 
-    alert("O VEICULO CONTINUARÁ ESTACIONADO ! ")
+    alert("O ASSOCIADO CONTINUARÁ ! ")
    
 }
   }else{
 
-    alert("VEOCULO NÃO ENCONTRADO ! ")
+    alert("ASSOCIADO NÃO ENCONTRADO ! ")
     console.warn('VEICULONAOENCONTRADO #20702001');
     document.getElementById('Carro').value = ""
     console.log(Arr)
