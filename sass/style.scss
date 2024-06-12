@@ -124,3 +124,20 @@ zoom:1
 
  }
 }
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background-color: rgb(43, 43, 43);
+}
+
+.Link{
+    text-decoration: underline;
+    color:aliceblue;
+}
+
+.Programador{
+    align-self: flex-end;
+    color: rgb(88, 88, 88);
+}
