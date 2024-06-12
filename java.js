@@ -6,6 +6,16 @@ const Confirm = document.getElementById('Confirmar')
 
 Confirm.addEventListener('click', function(){
 
+let DataLocal = document.getElementById('Date').value
+let Title = document.getElementById('TextTitle').value
+let h4 = document.getElementById('Titulo')
+
+
+h4.innerText = Title + "\n" + DataLocal
+
+h4.style.display = 'block'
+h4.style.textAlign = 'center'
+
 let Modelo = document.getElementById('Car').value
 let Placa = document.getElementById('CarNum').value
 let Estacionamento = document.getElementById('Resultado')
