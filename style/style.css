@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+.TituloPrincipal{
+display:none;
+text-align: justify;
+text-decoration: underline;
+padding: 0.5rem;
+font-size: x-large;
+width: 100%;
+color: aliceblue;
+background-color: rgb(25, 25, 25);
+}
+
 .Local {
   background-color: gray;
   height: max-content;
