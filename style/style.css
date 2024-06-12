@@ -130,7 +130,7 @@ background-color: rgb(25, 25, 25);
 
 .footer{
     display: flex;
-  height:20vh;
+    height:20vh;
     flex-direction: column;
     padding: 0.5rem;
     background-color: rgb(43, 43, 43);
