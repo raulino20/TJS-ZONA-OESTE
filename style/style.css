@@ -6,7 +6,8 @@
 }
 
 .Body{
-width:max-content;
+width:auto;
+heigth:max-content;
 }
 
 .TituloPrincipal{
