@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.Body{
+width:max-content;
+}
+
 .TituloPrincipal{
 display:none;
 text-align: justify;
