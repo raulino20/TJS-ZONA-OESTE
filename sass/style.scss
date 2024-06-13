@@ -43,9 +43,11 @@ heigth: max-content;
 }
 
 .BTN{
-  background-image:linear-gradient(90deg, black, white);
+
+    background-image: linear-gradient(10deg, rgb(42, 156, 202) ,rgb(52, 168, 213));
+    margin: 0 auto;
     width: 50%;
-    margin: 0 auto; 
+    box-shadow: 0.2rem 0.2rem 0.5rem rgb(72, 72, 72);
 }
 
 .header{
@@ -132,7 +134,7 @@ border-bottom: 10px solid black;
 }
 
 .footer{
-    heigth:20vh;
+    heigth:max-content;
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
