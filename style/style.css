@@ -21,6 +21,11 @@ color: aliceblue;
 background-color: rgb(25, 25, 25);
 }
 
+.Data{
+    font-size: larger;
+}
+
+
 .Local {
   background-color: gray;
   height: max-content;
