@@ -91,7 +91,7 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
    }else{
 
     alert("O ASSOCIADO CONTINUARÁ ! ")
-   
+    document.getElementById('Carro').value = ""
 }
   }else{
 
