@@ -137,6 +137,20 @@ zoom:1
     background-color: rgb(43, 43, 43);
 }
 
+.Label{
+    width: 100%;
+    border-top-right-radius: 50%;
+    background-color: rgb(222, 237, 249);
+}
+
+.TitleLabel{
+    padding: 0.1rem;
+    margin: auto auto auto 1px;
+    width: max-content;
+    background-color: aliceblue;
+}
+
+
 .Link{
     text-decoration: underline;
     color:aliceblue;
