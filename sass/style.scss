@@ -64,6 +64,8 @@ heigth: max-content;
 @media(max-width:768px){
 .header{
 zoom:1
+border-bottom: 10px solid black;
+    
  }
 }
 
@@ -139,13 +141,14 @@ zoom:1
 
 .Label{
     width: 100%;
-    border-top-right-radius: 50%;
-    background-color: rgb(222, 237, 249);
+   
 }
 
 .TitleLabel{
     padding: 0.1rem;
-    margin: auto auto auto 1px;
+      border-top-right-radius:10%;
+    border-bottom-left-radius:10% ;
+    margin: auto auto auto 0.1px;
     width: max-content;
     background-color: aliceblue;
 }
