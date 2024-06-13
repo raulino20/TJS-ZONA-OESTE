@@ -1,12 +1,12 @@
+
 let Arr = []
 
 let juncao = document.getElementById('Iterar')
 const Confirm = document.getElementById('Confirmar')
 
-
 Confirm.addEventListener('click', function(){
 
-let DataLocal = document.getElementById('Date').value
+let  DataLocal = document.getElementById('Date').value
 let Title = document.getElementById('TextTitle').value
 let h4 = document.getElementById('Titulo')
 
@@ -15,6 +15,8 @@ h4.innerText = Title + "\n" + DataLocal
 
 h4.style.display = 'block'
 h4.style.textAlign = 'center'
+
+
 
 let Modelo = document.getElementById('Car').value
 let Placa = document.getElementById('CarNum').value
@@ -30,15 +32,15 @@ const Veiculo = {
   }
 
 
-if(Modelo && Placa ){
+if(Modelo && Placa && h4 ){
+
 
 Arr.push(Veiculo)
-
 
 Adicionar = ""
 for(let i = 0; i < Arr.length; i++ ){
 
-      Adicionar += (i + 1) + "-Nome: " + Arr[i].Carro +  " de  N° : " + Arr[i].Numero  + "\n" 
+    Adicionar += (i + 1) + "- Nome: " + Arr[i].Carro + " N° : " + Arr[i].Numero + "\n" 
 
 }
 console.log(Adicionar)
@@ -66,6 +68,9 @@ let Estacionamento = document.getElementById('Resultado')
  const Veicular = document.getElementById('Carro').value
  let juncao = document.getElementById('Iterar')
 
+ const Icon = document.createElement('i')
+ Icon.className = "bi bi-person-fill"
+
 let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero === Veicular )
 
 
@@ -81,7 +86,7 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
 
     for(let i = 0; i < Arr.length; i++){
  
-        Adicionar += (i + 1) + "-Nome : " + Arr[i].Carro + " de N° : " + Arr[i].Numero + "\n"
+        Adicionar += (i + 1) +"-  Nome : " + Arr[i].Carro + " de N° : " + Arr[i].Numero + "\n"
  
     }
     Estacionamento.innerText = Adicionar
@@ -92,6 +97,7 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
 
     alert("O ASSOCIADO CONTINUARÁ ! ")
     document.getElementById('Carro').value = ""
+   
 }
   }else{
 
