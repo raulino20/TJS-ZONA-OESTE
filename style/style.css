@@ -130,7 +130,7 @@ background-color: rgb(25, 25, 25);
 
 .footer{
     display: flex;
-    height:20vh;
+    height:max-content;
     flex-direction: column;
     padding: 0.5rem;
     background-color: rgb(43, 43, 43);
@@ -138,13 +138,13 @@ background-color: rgb(25, 25, 25);
 
 .Label{
     width: 100%;
-    border-top-right-radius: 50%;
-    background-color: rgb(222, 237, 249);
 }
 
 .TitleLabel{
     padding: 0.1rem;
-    margin: auto auto auto 1px;
+    border-top-right-radius:10%;
+    border-bottom-left-radius:10% ;
+    margin: auto auto auto 0.1px;
     width: max-content;
     background-color: aliceblue;
 }
