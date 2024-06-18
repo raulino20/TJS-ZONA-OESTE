@@ -80,7 +80,7 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
 
     if(Search !== -1){
 
-        const Confirmacao = confirm('Deseja mesmo remover o Associado ? ') 
+        const Confirmacao = confirm('Deseja mesmo remover o/a Participante ? ') 
 
     if(Confirmacao === true){
 
@@ -116,14 +116,14 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
     
    }else{
 
-     alert("O ASSOCIADO CONTINUARÁ ! ")
+     alert("O PARTICIPANTE CONTINUARÁ ! ")
      document.getElementById('Carro').value = ""
    
 }
   }else{
 
-     alert("ASSOCIADO NÃO ENCONTRADO ! ")
-     console.warn('ASSOCIADONAOENCONTRADO #20702001');
+     alert("PARTICIPANTE NÃO ENCONTRADO ! ")
+     console.warn('PARTICIPANTENAOENCONTRADO #20702001');
      document.getElementById('Carro').value = ""
      console.log(Arr)
      Estacionamento.innerText = Adicionar
