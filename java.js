@@ -1,5 +1,5 @@
-
 let Arr = []
+let Trash = []
 
 let juncao = document.getElementById('Iterar')
 const Confirm = document.getElementById('Confirmar')
@@ -11,10 +11,10 @@ let Title = document.getElementById('TextTitle').value
 let h4 = document.getElementById('Titulo')
 
 
-h4.innerText = Title + "\n" + DataLocal
+    h4.innerText = Title + "\n" + DataLocal
 
-h4.style.display = 'block'
-h4.style.textAlign = 'center'
+    h4.style.display = 'block'
+    h4.style.textAlign = 'center'
 
 
 
@@ -35,77 +35,117 @@ const Veiculo = {
 if(Modelo && Placa && h4 ){
 
 
-Arr.push(Veiculo)
+    Arr.push(Veiculo)
 
-Adicionar = ""
-for(let i = 0; i < Arr.length; i++ ){
+    Adicionar = ""
+        for(let i = 0; i < Arr.length; i++ ){
 
-    Adicionar += (i + 1) + "- Nome: " + Arr[i].Carro + " N° : " + Arr[i].Numero + "\n" 
+          Adicionar += (i + 1) + "- Nome: " + Arr[i].Carro + " N° : " + Arr[i].Numero + "\n" 
 
-}
+        }
+
+
 console.log(Adicionar)
 console.log(Arr)
 
 Iterar.innerText = 'Contingente : ' + Arr.length
 Estacionamento.innerText = Adicionar
 
- document.getElementById('Car').value = ""
+document.getElementById('Car').value = ""
  document.getElementById('CarNum').value = ""
 
-}else{
-    alert("Um ou mais campos não foram prenchidos !")
-    console.error('ERROR #27072001')
-    document.getElementById('Car').value = ""
-    document.getElementById('CarNum').value = ""
-}
-})
+    }else{
+        alert("Um ou mais campos não foram prenchidos !")
+        console.error('ERROR #27072001')
+        document.getElementById('Car').value = ""
+        location.reload()
+        document.getElementById('CarNum').value = ""
+    }
+ }) 
 
-const Remove = document.getElementById('Remove')
+
+     const Remove = document.getElementById('Remove')
 
 Remove.addEventListener('click', function(){
+    let Reset = document.getElementById('Excluir')
+    let Estacionamento = document.getElementById('Resultado')
+    const Veicular = document.getElementById('Carro').value
+    let juncao = document.getElementById('Iterar')
 
-let Estacionamento = document.getElementById('Resultado')
- const Veicular = document.getElementById('Carro').value
- let juncao = document.getElementById('Iterar')
-
- const Icon = document.createElement('i')
- Icon.className = "bi bi-person-fill"
+    const Icon = document.createElement('i')
+    Icon.className = "bi bi-person-fill"
 
 let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero === Veicular )
 
 
     if(Search !== -1){
 
-        const Confirmacao = confirm('Deseja mesmo remover o Associado ? ')
+        const Confirmacao = confirm('Deseja mesmo remover o Associado ? ' + Arr.Carro) 
 
     if(Confirmacao === true){
 
         Arr.splice(Search,1)
 
-        let Adicionar = ""
+
+ let Adicionar = ""
 
     for(let i = 0; i < Arr.length; i++){
  
         Adicionar += (i + 1) +"-  Nome : " + Arr[i].Carro + " de N° : " + Arr[i].Numero + "\n"
  
-    }
+    }    
+     
     Estacionamento.innerText = Adicionar
+
     juncao.innerText = 'Contingente : ' + Arr.length
     document.getElementById('Carro').value = ""
     console.log(Arr)
+
+    Trash.push(Search)
+
+    let remocao = ""
+
+        for(let i = 0; i < Trash.length; i++){
+            
+            remocao += (i + 1) +"-Exluido : " + Trash[i].Carro + Trash[i].Numero + "\n" 
+
+        }
+
+        Reset.innerText = remocao
+
+    
    }else{
 
-    alert("O ASSOCIADO CONTINUARÁ ! ")
-    document.getElementById('Carro').value = ""
+     alert("O ASSOCIADO CONTINUARÁ ! ")
+     document.getElementById('Carro').value = ""
    
 }
   }else{
 
-    alert("ASSOCIADO NÃO ENCONTRADO ! ")
-    console.warn('ASSOCIADONAOENCONTRADO #20702001');
-    document.getElementById('Carro').value = ""
-    console.log(Arr)
-    Estacionamento.innerText = Adicionar
+     alert("ASSOCIADO NÃO ENCONTRADO ! ")
+     console.warn('ASSOCIADONAOENCONTRADO #20702001');
+     document.getElementById('Carro').value = ""
+     console.log(Arr)
+     Estacionamento.innerText = Adicionar
   }
 })
 
+
+
+
+
+
+function Atual(){
+    const Segundo = document.getElementById('Excluir')
+  const Primeiro = document.getElementById('Resultado')
+    Primeiro.style.display = 'flex'
+    Segundo.style.display = 'none'
+}
+
+function Exit(){
+ const Two =  document.getElementById('Excluir')
+  const First = document.getElementById('Resultado')
+    Two.style.display = 'flex'
+    First.style.display = 'none'
+
+}
