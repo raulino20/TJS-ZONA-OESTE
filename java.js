@@ -80,7 +80,7 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
 
     if(Search !== -1){
 
-        const Confirmacao = confirm('Deseja mesmo remover o Associado ? ' + Arr.Carro) 
+        const Confirmacao = confirm('Deseja mesmo remover o Associado ? ') 
 
     if(Confirmacao === true){
 
