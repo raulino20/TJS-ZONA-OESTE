@@ -173,8 +173,8 @@ border-bottom: 10px solid black;
 @media(max-width:768px){
 .Resultado{
 
-    font-size:74%;
-
+    font-size:75%;
+    font-weight:600;
  }
 }
 
