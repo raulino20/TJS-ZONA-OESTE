@@ -176,6 +176,8 @@
 }
 .Link {
   text-decoration: underline;
+  font-weight:500;
+  font-size: medium;
   color: aliceblue;
 }
 
