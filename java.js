@@ -83,7 +83,7 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
 
     if(Confirmacao === true){
 
-        Arr.splice(Search,1)
+     let PessoaRemovida = Arr.splice(Search,1)[0]
 
 
  let Adicionar = ""
@@ -100,13 +100,13 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
     document.getElementById('Carro').value = ""
     console.log(Arr)
 
-    Trash.push(Search)
+    Trash.push(PessoaRemovida)
 
     let remocao = ""
 
         for(let i = 0; i < Trash.length; i++){
             
-            remocao += (i + 1) +"-Exluido : " + Search + "\n" 
+            remocao += (i + 1) +"-Exluido : " + Trash[i].Carro + "\n" 
 
         }
 
