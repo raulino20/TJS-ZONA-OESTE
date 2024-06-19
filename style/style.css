@@ -60,6 +60,14 @@ background-color: rgb(25, 25, 25);
 
 }
 
+@media(max-width:768px){
+.Resultado{
+
+    font-size:15px;
+    font-weight:600;
+ }
+}
+
 #Exluir{
     color: aliceblue;
     background-color:rgb(255, 119, 89);
@@ -167,15 +175,6 @@ border-bottom: 10px solid black;
 
 .Star{
     color: rgb(205, 205, 37);
-}
-
-
-@media(max-width:768px){
-.Resultado{
-
-    font-size:75%;
-    font-weight:600;
- }
 }
 
 .footer{
