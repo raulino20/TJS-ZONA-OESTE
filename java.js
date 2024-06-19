@@ -18,7 +18,7 @@ let h4 = document.getElementById('Titulo')
 
 
 
-let Modelo = document.getElementById('Car').value
+let Modelo = document.getElementById('Car').value.trim()
 let Placa = document.getElementById('CarNum').value
 let Estacionamento = document.getElementById('Resultado')
 
@@ -74,7 +74,7 @@ Remove.addEventListener('click', function(){
     const Icon = document.createElement('i')
     Icon.className = "bi bi-person-fill"
 
-let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero === Veicular )
+let Search = Arr.findIndex(Busca => Busca.Carro === Veicular.trim() || Busca.Numero === Veicular.trim() )
 
 
     if(Search !== -1){
