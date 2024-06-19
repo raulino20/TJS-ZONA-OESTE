@@ -111,7 +111,7 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
         }
 
         Reset.innerText = remocao
-
+        Reset.style.display = 'none'
     
    }else{
 
