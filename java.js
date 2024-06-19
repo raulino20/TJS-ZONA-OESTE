@@ -106,7 +106,7 @@ let Search = Arr.findIndex(Busca => Busca.Carro === Veicular || Busca.Numero ===
 
         for(let i = 0; i < Trash.length; i++){
             
-             remocao += (i + 1) +"-Exluido : " + " Nome : " + Trash[i].Carro + " N° : " +  Trah[i].Numero  +  "\n" 
+             remocao += (i + 1) +"-Exluido : " + " Nome : " + Trash[i].Carro + " N° : " +  Trash[i].Numero  +  "\n" 
 
         }
 
