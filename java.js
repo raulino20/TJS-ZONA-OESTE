@@ -58,7 +58,6 @@ document.getElementById('Car').value = ""
         alert("Um ou mais campos não foram prenchidos !")
         console.error('ERROR #27072001')
         document.getElementById('Car').value = ""
-        location.reload()
         document.getElementById('CarNum').value = ""
     }
  }) 
