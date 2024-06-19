@@ -12,10 +12,10 @@ let h4 = document.getElementById('Titulo')
 
 
     h4.innerText = Title + "\n" + DataLocal
-
-    h4.style.display = 'block'
-    h4.style.textAlign = 'center'
-
+    if(Title && DataLocal ){
+        h4.style.display = 'block'
+        h4.style.textAlign = 'center'
+    }
 
 
 let Modelo = document.getElementById('Car').value.trim()
