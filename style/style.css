@@ -26,7 +26,12 @@ background-color: rgb(25, 25, 25);
 .Data{
     font-size: larger;
 }
-
+@media(max-width:768px){
+.Data{
+font-size: larger;
+margin-left: 0.5rem;
+ }
+}
 
 .Local{
     background-image:linear-gradient(80deg, white, black);
