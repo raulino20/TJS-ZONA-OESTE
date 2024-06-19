@@ -29,7 +29,7 @@ background-color: rgb(25, 25, 25);
 
 
 .Local{
-    background-image:linear-gradient(80deg, white, black)
+    background-image:linear-gradient(80deg, white, black);
     height: max-content;
     width: 100%;
     padding: 1rem;
@@ -40,7 +40,7 @@ background-color: rgb(25, 25, 25);
 
 @media(max-width:768px){
     .Local{
-        background-image:linear-gradient(80deg, white, black)
+        background-image:linear-gradient(80deg, white, black);
         display: flex;
         gap: 0.5rem;
         flex-direction: column;
