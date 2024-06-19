@@ -188,7 +188,6 @@ border-bottom: 10px solid black;
 .Form{
     display:flex;
     width: 80%;
-    box-shadow: 0.5rem 0.5rem 1rem black;
     background-image:linear-gradient(45deg ,white, black) ;
     height: max-content;
     border:1px solid black ;
@@ -197,7 +196,7 @@ border-bottom: 10px solid black;
 
 @media(max-width:768px){
     .Form{
-
+        box-shadow: 0.5rem 0.5rem 1rem black;
         border-radius:5%;
         padding: 0.5rem;
         width: 100%;
