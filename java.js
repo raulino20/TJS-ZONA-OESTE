@@ -74,7 +74,7 @@ Remove.addEventListener('click', function(){
     const Icon = document.createElement('i')
     Icon.className = "bi bi-person-fill"
 
-let Search = Arr.findIndex(Busca => Busca.Carro === Veicular.trim() || Busca.Numero === Veicular.trim() )
+let Search = Arr.findIndex(Busca => Busca.Carro.toLoweCase() === Veicular.trim() || Busca.Numero === Veicular.trim() )
 
 
     if(Search !== -1){
