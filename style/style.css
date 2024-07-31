@@ -58,6 +58,7 @@ margin-left: 0.5rem;
     background-color:rgb(65, 75, 75);
     text-align: justify;
     border-radius: 10px;
+    text-decoration: underline;
     border: 3px solid black;
     padding: 0.1rem;
     margin: 1rem auto 1rem auto;
@@ -68,10 +69,12 @@ margin-left: 0.5rem;
 
 @media(max-width:768px){
 .Resultado{
-
+    
+    text-decoration: underline;
     font-size:15px;
     font-weight:600;
- }
+
+  }
 }
 
 #Exluir{
@@ -165,9 +168,6 @@ border-bottom: 10px solid black;
     color: aliceblue;
 }
 
-.Estacionamento{
-  text-decoration: underline ;
-}
 
 @media(max-width:768px){
     .Titulo{
