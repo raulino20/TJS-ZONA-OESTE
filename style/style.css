@@ -165,6 +165,10 @@ border-bottom: 10px solid black;
     color: aliceblue;
 }
 
+.Estacionamento{
+  text-decoration: underline ;
+}
+
 @media(max-width:768px){
     .Titulo{
         font-size:100%;
