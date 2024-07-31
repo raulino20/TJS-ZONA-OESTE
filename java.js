@@ -40,7 +40,7 @@ if(Modelo && Placa && h4 ){
     Adicionar = ""
         for(let i = 0; i < Arr.length; i++ ){
 
-          Adicionar += (i + 1) + "- Nome: " + Arr[i].Carro + " N° : " + Arr[i].Numero + "\n" 
+          Adicionar += (i + 1) + "- Nome: " + Arr[i].Carro + " N°: " + Arr[i].Numero + "\n" 
 
         }
 
