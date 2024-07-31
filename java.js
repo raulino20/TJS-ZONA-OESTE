@@ -49,7 +49,6 @@ console.log(Adicionar)
 console.log(Arr)
 
 Iterar.innerText = 'Contingente : ' + Arr.length
-Estacionamento.style.TextDecoration = 'Underline'
 Estacionamento.innerText = Adicionar
 
 document.getElementById('Car').value = ""
