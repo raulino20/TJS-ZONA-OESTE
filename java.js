@@ -18,21 +18,21 @@ let h4 = document.getElementById('Titulo')
     }
 
 
-let Modelo = document.getElementById('Car').value.trim()
-let Placa = document.getElementById('CarNum').value
+let Modelo = document.getElementById('Nome').value.trim()
+let Placa = document.getElementById('Numero').value
 let Estacionamento = document.getElementById('Resultado')
 
 
 
 const Veiculo = {
 
-    Carro : Modelo,
+    Nome : Modelo,
     Numero : Placa
 
   }
 
 
-if(Modelo && Placa && h4 ){
+if(Modelo && Numero && h4 ){
 
 
     Arr.push(Veiculo)
@@ -40,7 +40,7 @@ if(Modelo && Placa && h4 ){
     Adicionar = ""
         for(let i = 0; i < Arr.length; i++ ){
 
-          Adicionar += (i + 1) + "- Nome: " + Arr[i].Carro + " N°: " + Arr[i].Numero + "\n" 
+          Adicionar += (i + 1) + "- Nome: " + Arr[i].Nome + " N°: " + Arr[i].Numero + "\n" 
 
         }
 
@@ -49,41 +49,78 @@ console.log(Adicionar)
 console.log(Arr)
 
 Iterar.innerText = 'Contingente : ' + Arr.length
+Estacionamento.style.textDecoration = 'Underline'
 Estacionamento.innerText = Adicionar
 
-document.getElementById('Car').value = ""
- document.getElementById('CarNum').value = ""
+document.getElementById('Nome').value = ""
+ document.getElementById('Numero').value = ""
 
     }else{
         alert("Um ou mais campos não foram prenchidos !")
         console.error('ERROR #27072001')
-        document.getElementById('Car').value = ""
-        document.getElementById('CarNum').value = ""
+        document.getElementById('Nome').value = ""
+        document.getElementById('Numero').value = ""
     }
  }) 
 
 
      const Remove = document.getElementById('Remove')
 
+// Botão para Remover alguem //
+
 Remove.addEventListener('click', function(){
     let Reset = document.getElementById('Excluir')
     let Estacionamento = document.getElementById('Resultado')
-    const Veicular = document.getElementById('Carro').value
+    const Veicular = document.getElementById('NomeX').value
     let juncao = document.getElementById('Iterar')
-
+//
     const Icon = document.createElement('i')
     Icon.className = "bi bi-person-fill"
 
-let Search = Arr.findIndex(Busca => Busca.Carro.toLowerCase() === Veicular.trim() || Busca.Numero === Veicular.trim() )
+// Botão para Limpar o Array Trash(Excluido) // 
+
+    let BtX = document.createElement('button')
+    BtX.type = "reset"
+    BtX.className = 'Btx'
+    BtX.style.width = '25%'
+    BtX.style.borderRadius = '10%'
+    BtX.style.margin = '0.1rem'
+    BtX.style.fontWeight = '500'
+    BtX.style.backgroundColor = 'gray'
+    BtX.style.fontSize = 'monospace'
+    BtX.innerText = 'Clear'
+
+BtX.addEventListener('click',function(){
+const Permissao = confirm("Deseja Limpar o Campo INTEIRO ? ")
+
+    if(Permissao === true){
+        
+        Reset.innerText = ""
+        alert("Campo Limpo .")
+        Trash = []
+        console.log(Trash)
+    }else{
+      
+        alert("O Campo não foi Limpo")
+    
+    }
+
+})
+
+    
+let Search = Arr.findIndex(Busca => Busca.Nome.toLowerCase() === Veicular.trim() || Busca.Numero === Veicular.trim() )
 
 
     if(Search !== -1){
 
         const Confirmacao = confirm('Deseja mesmo remover o/a Participante ? ' ) 
+        document.getElementById('NomeX').value = ""
+
 
     if(Confirmacao === true){
 
      let PessoaRemovida = Arr.splice(Search,1)[0]
+     document.getElementById('NomeX').value = ""
 
 
  let Adicionar = ""
@@ -93,11 +130,11 @@ let Search = Arr.findIndex(Busca => Busca.Carro.toLowerCase() === Veicular.trim(
         Adicionar += (i + 1) +"-  Nome : " + Arr[i].Carro + " de N° : " + Arr[i].Numero + "\n"
  
     }    
-     
+    Estacionamento.style.textDecoration = 'Underline'
     Estacionamento.innerText = Adicionar
 
     juncao.innerText = 'Contingente : ' + Arr.length
-    document.getElementById('Carro').value = ""
+    document.getElementById('Nome').value = ""
     console.log(Arr)
 
     Trash.push(PessoaRemovida)
@@ -106,12 +143,15 @@ let Search = Arr.findIndex(Busca => Busca.Carro.toLowerCase() === Veicular.trim(
 
         for(let i = 0; i < Trash.length; i++){
             
-             remocao += (i + 1) +"-Exluido : " + " Nome : " + Trash[i].Carro + " N° : " +  Trash[i].Numero  +  "\n" 
+             remocao += (i + 1) +"-Exluido : " + " Nome : " + Trash[i].Nome + " N° : " +  Trash[i].Numero  +  "\n" 
 
         }
 
         Reset.innerText = remocao
-        Reset.style.display = 'none'
+        Reset.appendChild(Btx)
+        Reset.style.display = 'flex'
+        Reset.style.FlexDirection = 'Column'
+        
     
    }else{
 
