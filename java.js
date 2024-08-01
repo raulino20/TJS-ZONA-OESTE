@@ -127,7 +127,7 @@ let Search = Arr.findIndex(Busca => Busca.Nome.toLowerCase() === Veicular.trim()
 
     for(let i = 0; i < Arr.length; i++){
  
-        Adicionar += (i + 1) +"-  Nome : " + Arr[i].Carro + " de N° : " + Arr[i].Numero + "\n"
+        Adicionar += (i + 1) +"-  Nome : " + Arr[i].Nome + " de N° : " + Arr[i].Numero + "\n"
  
     }    
     Estacionamento.style.textDecoration = 'Underline'
