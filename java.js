@@ -37,7 +37,7 @@ if(Modelo && Numero && h4 ){
 
     Arr.push(Veiculo)
 
-    Adicionar = ""
+  let Adicionar = ""
         for(let i = 0; i < Arr.length; i++ ){
 
           Adicionar += (i + 1) + "- Nome: " + Arr[i].Nome + " N°: " + Arr[i].Numero + "\n" 
@@ -96,7 +96,7 @@ const Permissao = confirm("Deseja Limpar o Campo INTEIRO ? ")
     if(Permissao === true){
         
         Reset.innerText = ""
-        alert("Campo Limpo .")
+        alert("O Campo Foi Limpo .")
         Trash = []
         console.log(Trash)
     }else{
@@ -148,7 +148,7 @@ let Search = Arr.findIndex(Busca => Busca.Nome.toLowerCase() === Veicular.trim()
         }
 
         Reset.innerText = remocao
-        Reset.appendChild(Btx)
+        Reset.appendChild(BtX)
         Reset.style.display = 'flex'
         Reset.style.FlexDirection = 'Column'
         
