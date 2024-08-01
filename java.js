@@ -143,7 +143,7 @@ let Search = Arr.findIndex(Busca => Busca.Nome.toLowerCase() === Veicular.trim()
 
         for(let i = 0; i < Trash.length; i++){
             
-             remocao += (i + 1) +"-Exluido : " + " Nome : " + Trash[i].Nome + " N° : " +  Trash[i].Numero  +  "\n" 
+             remocao += (i + 1) +"-Exluido ( " + " Nome : " + Trash[i].Nome + " N° : " +  Trash[i].Numero + " ) " +  "\n" 
 
         }
 
