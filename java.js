@@ -149,7 +149,7 @@ let Search = Arr.findIndex(Busca => Busca.Nome.toLowerCase() === Veicular.trim()
 
         Reset.innerText = remocao
         Reset.appendChild(BtX)
-        Reset.style.display = 'flex'
+        Reset.style.display = 'none'
         Reset.style.FlexDirection = 'Column'
         
     
