@@ -86,12 +86,13 @@ Remove.addEventListener('click', function(){
     BtX.style.borderRadius = '10%'
     BtX.style.margin = '0.1rem'
     BtX.style.fontWeight = '500'
-    BtX.style.backgroundColor = 'gray'
+    BtX.style.backgroundColor = 'orange'
+    BtX.style.BoxShadow = '0.1rem 0.1rem 0.1rem black'
     BtX.style.fontSize = 'monospace'
     BtX.innerText = 'Clear'
 
 BtX.addEventListener('click',function(){
-const Permissao = confirm("Deseja Limpar o Campo INTEIRO ? ")
+const Permissao = confirm("ATENÇÃO, O Campo inteiro será Limpo deseja continuar ? ")
 
     if(Permissao === true){
         
