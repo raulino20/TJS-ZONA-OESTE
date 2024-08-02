@@ -71,7 +71,7 @@ document.getElementById('Nome').value = ""
 Remove.addEventListener('click', function(){
     let Reset = document.getElementById('Excluir')
     let Estacionamento = document.getElementById('Resultado')
-    const Veicular = document.getElementById('NomeX').value
+    const Veicular = document.getElementById('NomeX').value.trim().toLowerCase()
     let juncao = document.getElementById('Iterar')
 //
     const Icon = document.createElement('i')
