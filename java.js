@@ -164,7 +164,7 @@ let Search = Arr.findIndex(Busca => Busca.Nome.toLowerCase() === Veicular.trim()
 
      alert("PARTICIPANTE NÃO ENCONTRADO ! ")
      console.warn('PARTICIPANTENAOENCONTRADO #20702001');
-     document.getElementById('Nome').value = ""
+     document.getElementById('NomeX').value = ""
      console.log(Arr)
      Estacionamento.innerText = Adicionar
   }
