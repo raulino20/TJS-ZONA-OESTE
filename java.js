@@ -163,7 +163,7 @@ let Search = Arr.findIndex(Busca => Busca.Nome.toLowerCase() === Veicular.trim()
 
      alert("PARTICIPANTE NÃO ENCONTRADO ! ")
      console.warn('PARTICIPANTENAOENCONTRADO #20702001');
-     document.getElementById('Carro').value = ""
+     document.getElementById('Nome').value = ""
      console.log(Arr)
      Estacionamento.innerText = Adicionar
   }
@@ -185,6 +185,7 @@ function Exit(){
  const Two =  document.getElementById('Excluir')
   const First = document.getElementById('Resultado')
     Two.style.display = 'flex'
+    Two.style.flexDirection = 'column'
     First.style.display = 'none'
 
 }
