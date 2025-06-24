@@ -197,9 +197,10 @@ border-bottom: 10px solid black;
 
 .Form{
     display:flex;
-    width: 75%;
+    width: 50%;
     padding:1rem;
     background-position:center;
+    background-attachment:fixed;
     background-size:cover;
     background-image:url(../sass/page/BG-ZONA\ OESTE.jpg);
     height: max-content;
