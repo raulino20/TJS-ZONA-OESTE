@@ -137,12 +137,13 @@ border-bottom: 10px solid black;
     border: 1px solid black;
     border-radius: 20%;
     box-shadow: 0.5rem 0.5rem 1rem black;
-    width:8%;
+    width:auto;
 }
 
 @media(max-width:768px){
     .Logo{
-        width:10%;
+        width:auto;
+        height:90%;
     }
 }
 
@@ -150,7 +151,7 @@ border-bottom: 10px solid black;
     .Logo{
         margin: 0 auto;
         border-radius: 10%;
-        width: 30%;
+        width: 50%;
     }
 }
 
