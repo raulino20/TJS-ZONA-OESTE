@@ -154,35 +154,6 @@ border-bottom: 10px solid black;
     }
 }
 
-.Titulo{
-    margin: 0 auto;
-    width: 50%;
-    text-align: center;
-    font-size: 50px;
-    padding: 0.5rem;
-    border-radius: 10px;
-    text-decoration: underline;
-    backdrop-filter: blur(30px);
-    text-shadow: 0.5rem 0.1rem 0.3rem black ;
-    font-family:'Oswald';
-    color: aliceblue;
-}
-
-
-@media(max-width:768px){
-    .Titulo{
-        font-size:100%;
-        font-size: larger;
-        backdrop-filter:none;
-    }
-}
-
-@media(max-width:426px){
-    .Titulo{
-      display: none;
-    }  
-}
-
 .Star{
     color: rgb(205, 205, 37);
 }
@@ -226,10 +197,29 @@ border-bottom: 10px solid black;
 
 .Label{
 
-    width: 100%;
+    width: 60%;
    // border-top-right-radius: 50%;
     //background-color: rgb(222, 237, 249);
 }
+@media(max-width:1024px){
+.Label{
+    width:70%;
+ }
+}
+
+@media(max-width:768px){
+    .Label{
+    width:55%;
+ }
+}
+
+@media(max-width:425px){
+    .Label{
+       width:100%; 
+ }
+}
+
+
 
 .TitleLabel{
     padding: 0.3rem;
