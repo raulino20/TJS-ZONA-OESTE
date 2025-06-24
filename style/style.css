@@ -70,6 +70,7 @@ margin-left: 0.5rem;
 
 @media(max-width:768px){
 .Resultado{
+    width:auto;
     background-color:black;
     text-decoration: underline;
     font-size:15px;
